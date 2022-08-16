@@ -1,0 +1,56 @@
+.bodyPage {
+    background-color: #333;
+    position: relative;
+    height: 100vh;
+}
+
+.animation{
+    width: 40px;
+    height: 40px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.f1{
+    border: 2px solid #fff;
+    border-radius: 50%;
+    border-left: transparent;
+    border-right: transparent;
+    width: 36px;
+    position: absolute;
+    height: 36px;
+    animation: f1 1.0s linear infinite;
+}
+
+@keyframes f1{
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.f2 {
+    border: 1px solid #fff;
+    width: 22px;
+    height: 22px;
+    border-top: transparent;
+    border-bottom: transparent;
+    border-radius: 50%;
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    animation: f2 0.40s linear infinite;
+}
+
+@keyframes f2{
+    0%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
