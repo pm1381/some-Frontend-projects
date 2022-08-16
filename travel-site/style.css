@@ -1,0 +1,791 @@
+/* @font-face{
+    font-family:Vazir;
+    src:url('./../../../asset/fonts/Vazir.woff');
+} */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: Vazirmatn; */
+}
+
+h1 {
+    font-size: 50px;
+    color: #222222;
+    line-height: 60px;
+}
+
+.padding-base {
+    padding: 20px ;
+}
+
+h2 {
+    font-size: 45px;
+    color: #222222;
+    line-height: 50px;
+}
+
+h4 {
+    font-size: 20px;
+    color: #222222;
+}
+
+h6 {
+    font-size: 13px;
+    font-weight: 500;
+    color: #222222;
+}
+
+p{
+    font-size: 19px;
+    color: #465b52;
+}
+
+a{
+    outline: none;
+    text-decoration: none;
+    color: #222222;
+}
+
+body{
+    width: 100%;
+    position: relative;
+}
+
+.generalMx {
+    margin-right: 60px;
+    margin-left: 60px;
+}
+
+#header {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.iconTitle {
+    font-size: 12px;
+    margin: 0 !important;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menuOption{
+    margin-right: 70px;
+    color: #1C4961;
+    opacity: 0.75;
+}
+
+.footer-menuOption{
+    margin-right: 35px;
+    font-size: 19px;
+    color: #000000;
+    font-weight: normal;
+}
+
+.firstOption {
+    opacity: 1 !important;
+}
+
+.registerButton{
+    border: 1px solid #6A89EF;
+    border-radius: 17px;
+    color: #fff;
+    background-color: #4468E2;
+    font-size: 19px;
+    padding: 5px;
+}
+
+.heroTitle h1 {
+    color: #fff;
+}
+
+#hero .heroDescription {
+    text-align: justify;
+    color: #fff;
+    width: 522px;
+    margin-bottom: 30px;
+}
+
+.whereData {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    white-space: nowrap;
+}
+
+.where {
+    /* border-right: 1px solid #ddd; */
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: 20px;
+}
+
+.searchBar:nth-child(2){ 
+    border-right: none;
+    /* ?? */
+}
+
+.searchBar {
+    width: 55%;
+    display: flex;
+    /* align-items: center; */
+    background-color: #fff;
+    border: 1px solid #707070;
+    border-radius: 10px;
+    /* box-shadow: 0 0 10px 12px; */
+    /* justify-content: space-between; */
+    flex-direction: row;
+    padding: 10px 20px;
+    border: 1px solid transparent;
+}
+
+.whereDataDesc {
+    font-size: 16px;
+    color: #7E7E7E;
+    white-space: nowrap;
+}
+
+.whereDesc {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.whereDesc p {
+    margin: 0;
+}
+
+.searchExplore {
+    background-color: #4468E2;
+    color: #fff;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    max-width: 40%;
+    flex: 1 0 25%;
+    justify-content: center;
+    margin-left: 30px;
+}
+
+.featureIcon{
+    margin-bottom: 10px;
+}
+
+#hero {
+    background: url("./images/hero.jpg");
+    /* background-position: center; */
+    background-size: cover;
+    position: relative;
+    height: 75vh;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.layer {
+    background-color: #eee;
+    opacity: 0.06;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.features{
+    display: flex;
+    flex-wrap: wrap;
+    /* align-items: center; */
+    flex-direction: row;
+    margin-bottom: 50px;
+}
+
+.feature {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 21%;
+    max-width: 21%;
+    margin-right: 50px;
+    box-shadow: 10px 40px 50px #E5E9F6;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.travelOptions{
+    display: flex;
+    width: 60%;
+    margin-right: auto;
+    margin-bottom: 30px;
+    margin-left: auto;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+}
+
+.travelOptions::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    background-color: #ccc;
+    width: 100%;
+}
+
+.travelOption{
+    font-size: 21px !important;
+    margin: 0;
+    cursor: pointer;
+}
+
+.firstTOption{
+    position: relative;
+    overflow: hidden;
+}
+
+.firstTOption::after {
+    content: "";
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 200px;
+    position: absolute;
+    z-index: 2;
+    background-color: #222222;
+}
+
+.destinationData{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.destination {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    max-width: 30%;
+    flex: 0 0 30%;
+}
+
+.destinationImage{
+    width: 100%;
+}
+
+.destDesc{
+    overflow: hidden;
+}
+
+.destPrice{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.signs{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 50%;
+}
+
+.destTripData{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.distance, .length{
+    margin: 0;
+    font-size: 16px;
+}
+
+.destination-mt-10{
+    margin-bottom: 5px;
+}
+
+.number{
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.marginBottom50{
+    margin-bottom: 50px;
+}
+
+.commentsTitle{
+    text-align: center;
+    display: block;
+    margin-bottom: 25px;
+}
+
+.commentData{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.commentBody{
+    font-size: 18px;
+    width: 800;
+    height: 100px;
+}
+
+.usercomments{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.comment{
+    padding: 50px 10px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 18px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    box-shadow: 10px 40px 50px #E5E9F6;
+    flex: 0 0 48%;
+    max-width: 48%;
+}
+
+.commentor{
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+}
+
+.commentorIcon{
+    border-radius: 50%;
+    margin-right: 7px;
+}
+
+.commentorData{
+    display: flex;
+    flex-direction: column;
+}
+
+.cm{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.commentorName{
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.commentorDesc{
+    font-size: 16px;
+}
+
+.blogsTitle{
+    margin-top: 40px;
+}
+
+.blogs{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    justify-content: space-between;
+}
+
+.leftBlog{
+    max-width: 55%;
+    flex: 0 0 55%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image:url('./images/NoPath.jpg') ;
+    background-size: cover;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: justify;
+    color: #fff;
+    flex-direction: column;
+    height: 500px;
+    border-radius: 15px;
+    background-position: center;
+    background-size: cover;
+}
+
+.blogSpan{
+    display: block;
+}
+
+.rightBlogs{
+    max-width: 40%;
+    flex: 0 0 40%;
+}
+
+.rightBlog{
+    max-width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+    flex-direction: column;
+}
+
+.rightTopBlog{
+    background-image:url('./images/eva-darron-oCdVtGFeDC0-unsplash.jpg') ;
+    background-position: center;
+    background-size: cover;
+}
+
+.rightBottomBlog{
+    background-image:url('./images/ibrahim-rifath-Y6tBl0pTe-g-unsplash.jpg') ;
+    background-position: center;
+    background-size: cover;
+}
+
+.rightBlogs{
+    display: flex;
+    flex-direction: column;
+}
+
+#footer{
+    width: calc(100% - 120px);
+    padding: 35px 20px;
+    background-color: #E1E8F8;
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 18px;
+}
+
+.socialMedia{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.socialMedia svg{
+    margin-right: 10px;
+}
+
+@media(max-width:1342px){
+    .searchBar{
+        width: 65%;
+    }
+}
+
+@media(max-width:1147px){
+    .searchBar{
+        width: 75%;
+    }
+}
+
+@media(max-width:1018px){
+    .searchBar{
+        width: 85%;
+    }
+}
+
+@media(max-width:912px){
+    .searchBar{
+        width: 90%;
+    }
+    .whereData{
+        font-size: 14px;
+    }
+    .whereDataDesc{
+        font-size: 13px;
+    }
+    .searchExplore{
+        max-width: 23%;
+        margin-left: 15px;
+    }
+    .where{
+        max-width: 23%;
+        flex: 0 0 23%;
+        margin-right: 10px;
+    }
+    .xf{
+        text-align: center;
+    }
+}
+
+@media(max-width:885px){
+    .generalMx{
+        margin-right: 40px;
+        margin-left: 40px;
+    }
+    .menuOption{
+        margin-right: 20px;
+    }
+}
+
+@media(max-width:730px){
+    .searchBar{
+        width: 100%;
+    }  
+    .menuOption{
+        font-size: 18px;
+    }
+    #hero .heroDescription{
+        width: 450px;
+    }
+    .heroTitle h1{
+        font-size: 28px;
+    }
+}
+
+@media(max-width:675px){
+    .searchBar{
+        flex-direction:column;
+        align-items: center;
+        justify-content: center;
+        width: 55%;
+    }
+    .where{
+        max-width: 100%;
+        margin-right: 0;
+        flex: 1;
+        margin-bottom: 10px;
+        width: 100%;
+        padding: 0;
+    }
+    .whereData{
+        text-align: center;
+        margin: 0;
+    }
+    .searchExplore{
+        width: 100%;
+        flex: 1;
+        max-width: 100%;
+        border-radius: 7px;
+        padding: 10px 5px;
+        margin-left: 0;
+    }
+}
+
+.hamburgerMenu{
+    display: none;
+}
+
+.hamburgerMenuItems{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    position: absolute;
+    background-color: #98aef3;
+    /* right: -100%; */
+    display: none;
+    top: -20px;
+    width: 200px;
+    height: 100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    z-index: 2;
+    padding: 20px 10px;
+    transition: all 0.6s ease 0.3s;
+}
+
+.hamburgerMenuItems .menuOption{
+    color: #fff;
+}
+
+@media(max-width:610px){
+    .menu{
+        display: none;
+    }
+    .hamburgerMenu{
+        display: inline;
+        cursor: pointer;
+        color: #4468E2;
+        fill:  #4468E2;
+    }
+}
+
+@media(max-width:600px){
+    #hero{
+        height: 85vh;
+    }
+    #hero .heroDescription{
+        width: 300px;
+    }
+}
+
+@media(max-width:550px){
+    .searchBar{
+        width: 75%;
+    }
+}
+
+@media(max-width:1190px) {
+    .feature{
+        flex: 0 0 45%;
+        max-width: 45%;
+        margin-bottom: 10px;
+    }
+}
+
+@media(max-width:1120px){
+    .feature{
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media(max-width:450px){
+    .generalMx{
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    #hero{
+        height: 95vh;
+    }
+    .searchBar{
+        width: 95%;
+    }
+    #hero .heroDescription{
+        width:255px
+    }
+}
+
+@media(max-width:1350px) {
+    .travelOptions{
+        width: 80%;
+    }
+    .travelOption {
+        font-size: 17px !important;
+    }
+}
+
+@media(max-width:1000px) {
+    .destination{
+        flex: 0 0 45%;
+        max-width: 45%;
+    }    
+}
+
+@media(max-width:625px) {
+    .destination{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .marginBottom50{
+        margin: 0;
+    }
+    .travelOptions{
+        width: 100%;
+    }
+    .travelOption {
+        font-size: 15px !important;
+    }
+}
+
+@media(max-width:570px){
+    .comment svg{
+        width: 100px;
+        height: 60px;
+    }
+}
+
+@media(max-width:470px){
+    .comment svg{
+        width: 130px;
+        height: 70px;
+    }
+}
+
+@media(max-width:460px){
+    .travelOption {
+        font-size: 12px !important;
+    }
+}
+
+@media(max-width:1150px){
+    .commentBody{
+        height: 220px;
+    }
+}
+
+@media(max-width:700px){
+    .comment{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+@media(max-width:1000px) {
+    #footer{
+        flex-direction: column;
+    }
+    .copyright{
+        margin-bottom: 15px;
+    }
+    .socialMedia{
+        margin-top: 15px;
+    }
+}
+
+@media(max-width:480px){
+    #footer{
+        width: calc(100% - 80px);
+    }
+    .copyright{
+        white-space: nowrap;
+    }
+}
+
+@media(max-width:450px){
+    #footer{
+        width: calc(100% - 20px);
+    }
+    .copyright{
+        font-size: 14px;
+    }
+}
+
+/* blog reached 630px */
+@media(max-width:1050px){
+    .leftBlog{
+        max-width: 100%;
+        flex: 0 0 100%;
+        height: 500px;
+    }
+    .rightBlogs{
+        height: 500px;
+        width: 100%;
+        flex: 1;
+        max-width: 100%;
+        gap: 10px;
+    }
+    .blogs{
+        gap: 25px;
+    }
+}
